@@ -1,0 +1,284 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+text-decoration: none;
+list-style: none;
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(22, 6, 6);
+    display: flex;
+    position: fixed;
+    z-index: 10;
+   
+
+   
+}
+nav h2{
+    padding-top: 15px;
+    padding-left: 15px;
+    font-size: 35px;
+    color: white;
+
+}
+strong{
+    animation-name:strong;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    transition: ease-in-out;
+    animation-fill-mode: forwards;
+animation-direction: normal;
+}
+@keyframes strong {
+    50%{
+        transform: translateY(-50px) rotate(360deg);
+    }
+    10%{
+     color: red;
+    }
+    20%{
+     color: rgb(123, 255, 0);
+    }
+    30%{
+     color: rgb(0, 81, 255);
+    }
+    40%{
+     color: rgb(247, 0, 255);
+    }
+    70%{
+     color: rgb(217, 255, 0);
+    }
+    80%{
+     color: rgb(225, 0, 255);
+    }}
+nav ul{
+    width: 85%;
+   gap: 50px;
+    background-color: rgba(37, 24, 24, 0.384);
+    display: flex;
+padding-top: 15px;
+    justify-content: right;
+    padding-right: 100px;
+}
+nav ul li a{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+.main {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    padding-top: 20px;
+    transition: 1s all;
+    padding: 30px;
+    padding-top: 150px;
+   
+
+}
+
+.main .car {
+    width: 90%;
+    height: 92%;
+
+    background: radial-gradient(rgba(7, 7, 66, 0.801), rgba(122, 6, 6, 0.74));
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    gap: 10px;
+}
+
+.car img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+
+    height: 80%;
+
+    transition: .3s;
+}
+
+.car img:hover {
+    transform: scale(1.1);
+}
+
+.car .btns button {
+    padding: 10px 12px 10px 12px;
+    background-color: rgba(0, 0, 0, 0.616);
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 3px;
+    transition: .2s;
+}
+
+.car .btns button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.down {
+    width: 100%;
+    height: 100vh;
+    border: 2px solid red;
+    /* overflow: hidden; */
+    transform: scale(.001);
+    transition: 1s;
+    border-radius: 50%;
+}
+
+.down .detail {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+
+    background-color: rgba(0, 0, 0, 0.801);
+}
+
+.detail h2 {
+    position: absolute;
+    top: 3px;
+    text-align: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+}
+
+.down .detail .detcar {
+    width: 45%;
+    height: 70%;
+    margin: 20px;
+    overflow: hidden;
+
+}
+
+.down .detail .detcar img {
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+
+}
+
+#car1 {
+    transform: translateY(600px) scale(.3);
+    transition: 1s;
+
+}
+
+#car2 {
+    transform: translateY(600px) scale(.3);
+    transition: 1s;
+}
+
+.down .detail .detcar .btns button {
+    padding: 10px 12px 10px 12px;
+    background-color: rgba(247, 240, 240, 0.616);
+    color: rgb(7, 1, 1);
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: .2s;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.down2 {
+    width: 100%;
+    height: 500px;
+    border: 2px solid red;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.carinfo {
+    width: 50%;
+    height: 60%;
+    background-color: black;
+    color: white;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-self: flex-end;
+    opacity: .7;
+    transform: scale(.001);
+    transition: .5s all ease-in-out;
+
+}
+
+.car:hover .carinfo {
+    transform: scale(1);
+
+
+}
+
+.carinfo h4 {
+    border-bottom: 1px solid white;
+    margin-bottom: 4px;
+}
+.about{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(rgb(41, 22, 22),rgb(87, 114, 13),rgb(20, 16, 7));
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.about h2{
+    text-align: center;
+}
+.about .about-div{
+width: 100%;
+height: 90%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.about .about-div .left{
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  height:  100% ;
+  flex-direction: column;
+  transition: 2s;
+}
+.about .about-div .left h1{
+    font-size: 80px;
+}
+.about .about-div .right{
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  height:  100% ;
+  transition: 2s;
+}
+.about .about-div .right img{
+    height: 100%;
+}
